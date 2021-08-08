@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4"> Current Weather in Your City </h1>
+            <p class="lead">To know about current weather condition in your city, enter your city name & Go!</p>
+        </div>
+    </div>
+
+
+
+    <form action="/" method="POST" class="form-inline">
+        <!-- <div class="form-group mb-2">
+          <label for="staticEmail2" class="sr-only">Email</label>
+          <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+        </div> -->
+        <div class="form-group mx-sm-3 mb-2">
+            <label for="cityInput" class="sr-only">cityName:</label>
+            <input type="text" name="cityName" class="form-control" id="cityInput" placeholder="Enter Your City Name">
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">Go</button>
+    </form>
+
+</body>
+
+</html>
