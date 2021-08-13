@@ -34,7 +34,7 @@ app.post("/", (req, res) => {
       const imgUrl = ` http://openweathermap.org/img/wn/${icon}.png`;
       // background-color:#FE9898;
       res.send(`
-    <div style="background-color:#FE9898;color:white;text-align:center;width:50%;margin:auto;border-radius:12%;font-family:cursive;">
+    <div style="background-color:#FE9898;color:white;font-size:25px;text-align:center;width:100%;height:100%;margin:auto;padding-top:70px;border-radius:10px;">
     <h2>Current Temperature in ${query}: ${temp}°C</h2>
     <h2>Feels Like: ${feelsLike}°C</h2>
     <img src="${imgUrl}" alt="">
@@ -50,6 +50,6 @@ app.post("/", (req, res) => {
   });
 });
 
-app.listen(process.env.PORT || port, function (req, res) {
+app.listen(process.env.PORT || port, function () {
   console.log(`Server is running on port ${port}`);
 });
